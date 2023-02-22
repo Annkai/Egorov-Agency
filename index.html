@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Advisors</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <div class="background-modal">
+        <div class="background-modal__popup">
+            <div class="close"></div>
+            <p class="background-modal__title"  id="result_title">success!</p>
+            <p class="background-modal__subtitle" id="result_subtitle">You have successfully subscribed to the email newsletter</p>
+            <button class="background-modal__btn button">Close</button>
+        </div>
+    </div>
+    <img src="./assets/images/png/Vector-1.png" alt="" class="vector-left">
+    <img src="./assets/images/png/Vector-2.png" alt="" class="vector-right">
+    <header class="header">
+        <div class="header__container container">
+        <h1 class="visually-hidden">Lead Advisors</h1>
+        <a href="index.html"><img src="./assets/images/svg/logo.svg" alt="logo" class="header__logo logo"></a>
+    </header>
+
+    <main class="main">
+        <section class="construction">
+            <div class="construction__container container">
+                <h2 class="construction__title title">Under Construction</h2>
+                <p class="construction__subtitle">We're making lots of improvements and will be back soon</p>
+            </div>  
+        </section>
+
+        <section class="time">
+            <div class="time__container container">
+            <h2 class="visually-hidden">Time</h2>
+            <ul class="time__list" role="list">
+                <li class="time__item">
+                    <div class="time__card time-card">
+                        <div class="time-card__figure time-card__figure--colon time-card__figure-days">92</div>
+                        <div class="time-card__name-block">
+                            <img src="./assets/images/svg/time.svg" alt="" class="time-card__img">
+                            <span class="time-card__name time-card__days">Days</span>
+                        </div>  
+                    </div>
+                </li>
+
+                <li class="time__item">
+                    <div class="time_card time-card">
+                        <div class="time-card__figure time-card__figure--colon time-card__figure-hours">11</div>
+                        <div class="time-card__name-block">
+                            <img src="./assets/images/svg/time.svg" alt="" class="time-card__img">
+                            <span class="time-card__name time-card__hours">Hours</span>
+                        </div>  
+                    </div>
+                </li>
+
+                <li class="time__item">
+                    <div class="time_card time-card">
+                        <div class="time-card__figure time-card__figure--colon time-card__figure-minutes">41</div>
+                        <div class="time-card__name-block">
+                            <img src="./assets/images/svg/time.svg" alt="" class="time-card__img">
+                            <span class="time-card__name time-card__minutes">Minutes</span>
+                        </div>  
+                    </div>
+                </li>
+
+                <li class="time__item">
+                    <div class="time_card time-card">
+                        <div class="time-card__figure time-card__figure-seconds">48</div>
+                        <div class="time-card__name-block">
+                            <img src="./assets/images/svg/time.svg" alt="" class="time-card__img">
+                            <span class="time-card__name time-card__seconds">Seconds</span>
+                        </div>  
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </section>
+
+        <section class="event">
+            <div class="event__container container">
+            <h2 class="event__title title">Check our event page when you wait:</h2>
+            <form action="https://egorovagency.by/#main" target="_blank" class="event__form">
+                <button class="event__button button">Go to the event</button>
+               </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <form action="action_ajax_form" method="post" class="footer__form form" id="ajax_form">
+                <input type="email" name="email" class="footer__input"  placeholder="Enter your Email and get notified" required>
+                <button type="submit" class="footer__button button" id="btn"></button>
+            </form>
+            </div>      
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
